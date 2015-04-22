@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Life Counter</string>
+
+    <string name="minus_five">-5</string>
+    <string name="minus_one">-1</string>
+    <string name="plus_one">+1</string>
+    <string name="plus_five">+5</string>
+    <string name="p1lives">10</string>
+    <string name="p2lives">10</string>
+    <string name="p3lives">10</string>
+    <string name="p4lives">10</string>
+    <string name="action_settings">Settings</string>
+</resources>
