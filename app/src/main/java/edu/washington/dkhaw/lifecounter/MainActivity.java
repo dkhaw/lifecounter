@@ -13,6 +13,11 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
+    private int p1lives = 10;
+    private int p2lives = 10;
+    private int p3lives = 10;
+    private int p4lives = 10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +37,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p1lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 5;
+                int lives = p1lives - 5;
                 tv.setText("" + lives);
+                p1lives -= 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 1 LOSES!";
@@ -50,8 +56,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p1lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 1;
+                int lives = p1lives - 1;
                 tv.setText("" + lives);
+                p1lives -= 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 1 LOSES!";
@@ -68,8 +75,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p1lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 1;
+                int lives = p1lives + 1;
                 tv.setText("" + lives);
+                p1lives += 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 1 LOSES!";
@@ -86,8 +94,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p1lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 5;
+                int lives = p1lives + 5;
                 tv.setText("" + lives);
+                p1lives += 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 1 LOSES!";
@@ -104,8 +113,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p2lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 5;
+                int lives = p2lives - 5;
                 tv.setText("" + lives);
+                p2lives -= 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 2 LOSES!";
@@ -122,8 +132,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p2lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 1;
+                int lives = p2lives - 1;
                 tv.setText("" + lives);
+                p2lives -= 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 2 LOSES!";
@@ -140,8 +151,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p2lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 1;
+                int lives = p2lives + 1;
                 tv.setText("" + lives);
+                p2lives += 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 2 LOSES!";
@@ -158,8 +170,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p2lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 5;
+                int lives = p2lives + 5;
                 tv.setText("" + lives);
+                p2lives += 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 2 LOSES!";
@@ -176,8 +189,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p3lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 5;
+                int lives = p3lives - 5;
                 tv.setText("" + lives);
+                p3lives -= 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 3 LOSES!";
@@ -194,8 +208,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p3lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 1;
+                int lives = p3lives - 1;
                 tv.setText("" + lives);
+                p3lives -= 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 3 LOSES!";
@@ -212,8 +227,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p3lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 1;
+                int lives = p3lives + 1;
                 tv.setText("" + lives);
+                p3lives += 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 3 LOSES!";
@@ -230,8 +246,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p3lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 5;
+                int lives = p3lives + 5;
                 tv.setText("" + lives);
+                p3lives += 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 3 LOSES!";
@@ -248,8 +265,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p4lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 5;
+                int lives = p4lives - 5;
                 tv.setText("" + lives);
+                p4lives -= 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 4 LOSES!";
@@ -266,8 +284,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p4lives);
-                int lives = Integer.parseInt(tv.getText().toString()) - 1;
+                int lives = p4lives - 1;
                 tv.setText("" + lives);
+                p4lives -= 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 4 LOSES!";
@@ -284,8 +303,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p4lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 1;
+                int lives = p4lives + 1;
                 tv.setText("" + lives);
+                p4lives += 1;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 4 LOSES!";
@@ -302,8 +322,9 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 TextView tv = (TextView) findViewById(R.id.p4lives);
-                int lives = Integer.parseInt(tv.getText().toString()) + 5;
+                int lives = p4lives + 5;
                 tv.setText("" + lives);
+                p4lives += 5;
                 if (lives <= 0) {
                     Context context = getApplicationContext();
                     CharSequence text = "Player 4 LOSES!";
@@ -318,12 +339,32 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        // Save the user's current game state
-        savedInstanceState.putInt(STATE_SCORE, mCurrentScore);
-        savedInstanceState.putInt(STATE_LEVEL, mCurrentLevel);
-
-        // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putInt("p1ID", p1lives);
+        savedInstanceState.putInt("p2ID", p2lives);
+        savedInstanceState.putInt("p3ID", p3lives);
+        savedInstanceState.putInt("p4ID", p4lives);
+
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        int p1current = savedInstanceState.getInt("p1ID");
+        int p2current = savedInstanceState.getInt("p2ID");
+        int p3current = savedInstanceState.getInt("p3ID");
+        int p4current = savedInstanceState.getInt("p4ID");
+
+        TextView p1tv = (TextView) findViewById(R.id.p1lives);
+        p1tv.setText("" + p1current);
+        TextView p2tv = (TextView) findViewById(R.id.p2lives);
+        p2tv.setText("" + p2current);
+        TextView p3tv = (TextView) findViewById(R.id.p3lives);
+        p3tv.setText("" + p3current);
+        TextView p4tv = (TextView) findViewById(R.id.p4lives);
+        p4tv.setText("" + p4current);
     }
 
     @Override

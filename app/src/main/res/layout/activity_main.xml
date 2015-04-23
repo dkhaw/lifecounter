@@ -30,8 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/p1lives"
-            android:text="@string/p1lives" />
+            android:id="@+id/p1lives" />
 
         <Button
             android:layout_width="wrap_content"
@@ -74,8 +73,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/p2lives"
-            android:text="@string/p2lives" />
+            android:id="@+id/p2lives" />
 
         <Button
             android:layout_width="wrap_content"
@@ -118,8 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/p3lives"
-            android:text="@string/p3lives" />
+            android:id="@+id/p3lives" />
 
         <Button
             android:layout_width="wrap_content"
@@ -162,8 +159,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/p4lives"
-            android:text="@string/p4lives" />
+            android:id="@+id/p4lives" />
 
         <Button
             android:layout_width="wrap_content"
